@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; }
+  ::selection { background:#403E3C; color:#FBF7EA; }
+</style>
+</helmet>
+
+<div style="background:#FBF7EA; color:#403E3C; font-family:'Source Sans 3',system-ui,sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <header style="position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); background:rgba(251,247,234,0.82); border-bottom:1px solid rgba(64,62,60,0.12);">
+    <nav style="max-width:1280px; margin:0 auto; padding:16px clamp(20px,5vw,72px); display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="Home.dc.html" style="display:flex; align-items:center; gap:12px; text-decoration:none; color:#403E3C;">
+        <span style="display:grid; place-items:center; width:34px; height:34px; border:1.5px solid #403E3C; font-family:'Source Sans 3',sans-serif; font-size:13px; font-weight:500;">RB</span>
+        <span style="font-weight:600; font-size:15px; letter-spacing:-0.01em;">Ryan Ballantyne</span>
+      </a>
+      <div style="display:flex; align-items:center; gap:clamp(14px,2.4vw,34px);">
+        <a href="Resume.dc.html" style="text-decoration:none; color:#403E3C; font-size:13.5px; font-weight:600; border-bottom:2px solid #403E3C; padding-bottom:3px;">Resume</a>
+        <a href="Portfolio.dc.html" style="text-decoration:none; color:#56524C; font-size:13.5px; font-weight:500;">Portfolio</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER -->
+  <section style="max-width:1120px; margin:0 auto; padding:clamp(48px,7vw,96px) clamp(20px,5vw,72px) clamp(28px,3vw,44px);">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+      <div>
+        <div style="font-family:'Source Sans 3',sans-serif; font-size:12px; letter-spacing:0.16em; color:#6B6862; margin-bottom:16px;">RESUME</div>
+        <h1 style="margin:0 0 12px; font-family:'Roboto Slab',Georgia,serif; font-weight:700; font-size:clamp(36px,5vw,64px); line-height:1.0; letter-spacing:-0.025em;">Ryan Ballantyne</h1>
+        <p style="margin:0; font-family:'Source Sans 3',sans-serif; font-size:13px; color:#6B6862; letter-spacing:0.02em;">GIS &amp; Spatial Analyst · Melbourne, VIC · ryanballantyne@live.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section style="max-width:1120px; margin:0 auto; padding:0 clamp(20px,5vw,72px) clamp(20px,3vw,40px); display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:clamp(36px,5vw,64px); align-items:start;">
+
+    <!-- EXPERIENCE + EDUCATION -->
+    <div>
+      <h2 style="margin:0 0 28px; font-family:'Source Sans 3',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.12em; color:#403E3C; text-transform:uppercase;">Experience</h2>
+
+      <div style="border-left:2px solid rgba(64,62,60,0.14); padding-left:28px; display:flex; flex-direction:column; gap:36px;">
+
+        <!-- C&W -->
+        <div style="position:relative;">
+          <span style="position:absolute; left:-35px; top:6px; width:12px; height:12px; border-radius:50%; background:#403E3C; border:3px solid #FBF7EA;"></span>
+          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
+            <h3 style="margin:0; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:22px;">Sustainability Analyst</h3>
+            <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">Mar 2023 to Current</span>
+          </div>
+          <div style="font-size:14px; color:#403E3C; font-weight:600; margin:4px 0 14px;">Cushman &amp; Wakefield · Melbourne, VIC</div>
+          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px; font-size:15px; line-height:1.55; color:#6B6862;">
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Designed and led the rollout of Atlas, the firm's enterprise GIS platform, geodatabase architecture, a React/ArcGIS Maps SDK front end, FastAPI services and Databricks analytics, establishing spatial data standards, integrity controls and documented workflows adopted nationally.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Conducted landscape-scale spatial analysis across a national portfolio, integrating infrastructure and environmental layers (transmission, fibre, pipelines, hazard and constraint data) for site feasibility and predictive site assessment.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Processed and interpreted geospatial data from multiple sources, GIS exports, survey data and unstructured PDFs (OCR), building Python and SQL pipelines that standardised messy multi-source data into clean, analysis-ready datasets.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Produced cartographic outputs and analytical reports for asset managers and project teams and was routinely brought into meetings to translate technical spatial analysis for non-specialist audiences.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Authored documentation and protocols for data import, spatial layer management and map publishing; led onboarding, training and technical support for analysts and brokers.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Contributed to PRISM, an interactive 3D market-simulation platform, supporting its APAC implementation; Esri featured the platform and remains in production use.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Built Power BI dashboards and QA processes that cut manual reporting effort by 18%.</li>
+          </ul>
+        </div>
+
+        <!-- Miles -->
+        <div style="position:relative;">
+          <span style="position:absolute; left:-35px; top:6px; width:12px; height:12px; border-radius:50%; background:#403E3C; border:3px solid #FBF7EA;"></span>
+          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
+            <h3 style="margin:0; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:22px;">Project Manager / Carpenter</h3>
+            <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">May 2020 to Aug 2022</span>
+          </div>
+          <div style="font-size:14px; color:#403E3C; font-weight:600; margin:4px 0 14px;">Miles Construction &amp; self-employed · New Zealand</div>
+          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px; font-size:15px; line-height:1.55; color:#6B6862;">
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Scoped and priced residential projects, advising on buildability and site logistics.</li>
+          </ul>
+        </div>
+
+        <!-- Hawkes Bay -->
+        <div style="position:relative;">
+          <span style="position:absolute; left:-35px; top:6px; width:12px; height:12px; border-radius:50%; background:#8A857A; border:3px solid #FBF7EA;"></span>
+          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
+            <h3 style="margin:0; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:22px;">Intern</h3>
+            <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">Oct 2021 to May 2022</span>
+          </div>
+          <div style="font-size:14px; color:#403E3C; font-weight:600; margin:4px 0 14px;">Hawkes Bay Council · Hawkes Bay, NZ</div>
+          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px; font-size:15px; line-height:1.55; color:#6B6862;">
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Collected and managed field-based water quality data using ArcGIS Field Maps, applying ArcGIS and Google Earth for visual inspection, multi-temporal image review and change verification to support environmental monitoring workflows.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Used LiDAR-derived DEMs to derive terrain variables and model hydrological features in R, integrating outputs into GIS to support wetland mapping and water management planning.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Conducted ecological assessments and applied remote sensing data to inform land-use decisions under the RMA and regional planning policy.</li>
+          </ul>
+        </div>
+
+        <!-- Enable -->
+        <div style="position:relative;">
+          <span style="position:absolute; left:-35px; top:6px; width:12px; height:12px; border-radius:50%; background:#6B6862; border:3px solid #FBF7EA;"></span>
+          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
+            <h3 style="margin:0; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:22px;">GIS Technician</h3>
+            <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">Jun 2015 to 2017</span>
+          </div>
+          <div style="font-size:14px; color:#403E3C; font-weight:600; margin:4px 0 14px;">Enable · Christchurch, NZ</div>
+          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px; font-size:15px; line-height:1.55; color:#6B6862;">
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Built spatial datasets for a nationwide fibre rollout, translating AutoCAD designs into enterprise GIS (G/Technology) and validating spatial accuracy against field as-built conditions through rigorous QA.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Identified and mapped heritage-listed sites and constraint zones across urban and suburban networks, flagging heritage and environmental sensitivities to inform route planning and protect listed assets during construction.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Developed an ArcPy tool that automated construction job-pack generation in ArcGIS Pro, programmatically clipping datasets and exporting formatted maps to PDF, replacing a manual per-map process and standardising cartographic output.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Contributed to an internal web-GIS application integrating enterprise systems via a GraphQL API, React front end and Docker deployment.</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute; left:0; color:#6B6862;">•</span>Provided spatial editing and QA support to keep field work aligned with enterprise asset records.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="margin:48px 0 24px; font-family:'Source Sans 3',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.12em; color:#403E3C; text-transform:uppercase;">Education</h2>
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline; padding-bottom:16px; border-bottom:1px solid rgba(64,62,60,0.12);">
+          <div>
+            <h3 style="margin:0 0 4px; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:19px;">Master of Resource and Environmental Planning</h3>
+            <div style="font-size:14px; color:#6B6862;">Massey University</div>
+          </div>
+          <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">Oct 2026</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline; padding-bottom:16px; border-bottom:1px solid rgba(64,62,60,0.12);">
+          <div>
+            <h3 style="margin:0 0 4px; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:19px;">Diploma in Planning (Spatial Analysis &amp; Planning)</h3>
+            <div style="font-size:14px; color:#6B6862;">Massey University</div>
+          </div>
+          <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">2025</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
+          <div>
+            <h3 style="margin:0 0 4px; font-family:'Roboto Slab',Georgia,serif; font-weight:600; font-size:19px;">BSc Environmental Science (GIS &amp; Ecology)</h3>
+            <div style="font-size:14px; color:#6B6862;">Victoria University of Wellington</div>
+          </div>
+          <span style="font-family:'Source Sans 3',sans-serif; font-size:12px; color:#6B6862; white-space:nowrap;">2022</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <aside style="position:sticky; top:96px;">
+      <div style="background:#F4F0E3; border:1px solid rgba(64,62,60,0.14); padding:clamp(22px,2.4vw,30px);">
+        <h2 style="margin:0 0 22px; font-family:'Source Sans 3',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.12em; color:#403E3C; text-transform:uppercase;">Skills</h2>
+        <div style="display:flex; flex-direction:column; gap:20px;">
+          <div>
+            <div style="font-family:'Source Sans 3',sans-serif; font-size:11px; letter-spacing:0.05em; color:#6B6862; text-transform:uppercase; margin-bottom:7px;">Esri / ArcGIS</div>
+            <p style="margin:0; font-size:14px; line-height:1.5; color:#56524C;">ArcGIS Pro, ArcGIS Maps SDK for JavaScript, Field Maps, Survey123, ArcPy automation, enterprise GIS platform administration, QGIS, MapInfo, AutoCAD, LiDAR-derived terrain data</p>
+          </div>
+          <div style="border-top:1px solid rgba(64,62,60,0.1); padding-top:18px;">
+            <div style="font-family:'Source Sans 3',sans-serif; font-size:11px; letter-spacing:0.05em; color:#6B6862; text-transform:uppercase; margin-bottom:7px;">Development</div>
+            <p style="margin:0; font-size:14px; line-height:1.5; color:#56524C;">React, FastAPI, GraphQL API, Docker, 3D web visualisation, LLM integration (Claude)</p>
+          </div>
+          <div style="border-top:1px solid rgba(64,62,60,0.1); padding-top:18px;">
+            <div style="font-family:'Source Sans 3',sans-serif; font-size:11px; letter-spacing:0.05em; color:#6B6862; text-transform:uppercase; margin-bottom:7px;">Data &amp; Cloud</div>
+            <p style="margin:0; font-size:14px; line-height:1.5; color:#56524C;">SQL (SQL Server, Azure SQL, Synapse), Databricks, Python (ArcPy, pandas), R, Power BI</p>
+          </div>
+          <div style="border-top:1px solid rgba(64,62,60,0.1); padding-top:18px;">
+            <div style="font-family:'Source Sans 3',sans-serif; font-size:11px; letter-spacing:0.05em; color:#6B6862; text-transform:uppercase; margin-bottom:7px;">Cartography</div>
+            <p style="margin:0; font-size:14px; line-height:1.5; color:#56524C;">Adobe Illustrator, Photoshop, SketchUp</p>
+          </div>
+          <div style="border-top:1px solid rgba(64,62,60,0.1); padding-top:18px;">
+            <div style="font-family:'Source Sans 3',sans-serif; font-size:11px; letter-spacing:0.05em; color:#6B6862; text-transform:uppercase; margin-bottom:7px;">Planning &amp; Policy</div>
+            <p style="margin:0; font-size:14px; line-height:1.5; color:#56524C;">Victorian Planning Provisions, Planning and Environment Act 1987, zoning, overlays, heritage and environmental constraints</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+</div>
+</x-dc>
+</body>
+</html>
