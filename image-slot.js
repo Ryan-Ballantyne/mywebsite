@@ -100,7 +100,7 @@
     return loadP;
   }
 
-  // Serialize writes so two near-simultaneous drops on different slots
+  // Serialise writes so two near-simultaneous drops on different slots
   // can't reorder at the backend and leave the sidecar with only the
   // first. A save requested mid-flight just marks dirty and re-fires on
   // completion with the then-current slots.
@@ -119,7 +119,7 @@
   const S_MAX = 5;
   const clampS = (s) => Math.max(1, Math.min(S_MAX, s));
 
-  // Normalize a stored slot value. Pre-reframe sidecars stored a bare
+  // Normalise a stored slot value. Pre-reframe sidecars stored a bare
   // data-URL string; newer ones store {u, s, x, y}. Either shape is valid.
   function getSlot(id) {
     const v = slots[id];
