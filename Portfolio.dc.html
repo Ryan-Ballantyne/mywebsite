@@ -254,7 +254,7 @@ class Component extends DCLogic {
         kind: 'img', img: 'images/etched.jpg', full: 'images/full/etched.jpg',
         kicker: "HAWKE'S BAY LiDAR · TERRAIN TEXTURE",
         title: 'Etched',
-        desc: 'An expressive terrain-visualisation piece blending slope roughness and surface openness from the 1 m LiDAR DEM, bringing out the grain of every gully and ridge as a near-abstract cartographic study.',
+        desc: 'An expressive terrain-visualisation piece blending slope roughness and surface openness from the 1 m LiDAR DEM, bringing out the grain of every gully and ridge as a near-abstract cartographic study',
         tags: ['Slope roughness', 'Surface openness', 'Magma ramp'],
         spec: [
           { k: 'Subject', v: 'Slope roughness & surface openness' },
@@ -262,7 +262,7 @@ class Component extends DCLogic {
           { k: 'Data', v: "Hawke's Bay LiDAR DEMs" },
         ],
         detail: [
-          "\u2018Etched\u2019 is a terrain-texture study blending slope roughness with positive surface openness.",
+          "\u2018Etched\u2019 is a terrain-texture study blending slope roughness with positive surface openness",
         ],
         source: "Hawke's Bay LiDAR DEMs (2020\u20132021), Land Information New Zealand (CC BY 4.0). CRS: NZGD2000 / NZTM2000 (EPSG:2193). Cartography: Ryan Ballantyne.",
       },
@@ -273,7 +273,7 @@ class Component extends DCLogic {
         pos: '78% 50%',
         kicker: "HAWKE'S BAY LiDAR · TERRAIN",
         title: 'LiDAR-derived terrain elevation',
-        desc: 'A hypsometric-tinted, hillshaded elevation model rendered from the 1 m Hawke\u2019s Bay LiDAR DEM. Colour ramp and relief shading combined to read landform and drainage structure at a glance.',
+        desc: 'A hypsometric-tinted, hillshaded elevation model rendered from the 1 m Hawke\u2019s Bay LiDAR DEM. Colour ramp and relief shading combined to read landform and drainage structure at a glance',
         tags: ['1 m DEM', 'Hillshade', 'Hypsometric tint', 'NZTM2000'],
         spec: [
           { k: 'Subject', v: 'Hypsometric hillshade' },
@@ -281,8 +281,8 @@ class Component extends DCLogic {
           { k: 'Data', v: "Hawke's Bay LiDAR DEMs" },
         ],
         detail: [
-          'This map emphasises elevation patterns and landforms for environmental and geospatial analysis.',
-          'Processed LiDAR point cloud data with PDAL, performed terrain analysis in R and generated a high-resolution Digital Elevation Model (DEM).',
+          'This map emphasises elevation patterns and landforms for environmental and geospatial analysis',
+          'Processed LiDAR point cloud data with PDAL, performed terrain analysis in R and generated a high-resolution Digital Elevation Model (DEM)',
         ],
         source: "Hawke's Bay LiDAR DEMs (2020\u20132021), Land Information New Zealand (CC BY 4.0). Basemap: Eagle Technology, LINZ, StatsNZ, NIWA, Natural Earth, \u00a9 OpenStreetMap. Cartography: Ryan Ballantyne.",
       },
@@ -293,7 +293,7 @@ class Component extends DCLogic {
         pos: '50% 60%', zoom: 2, origin: '78% 62%',
         kicker: "HAWKE'S BAY LiDAR · HYDROLOGY",
         title: 'Drainage network extraction',
-        desc: 'A stream network derived from the 1 m LiDAR DEM and classified by upstream contributing area — from headwaters to main channel — over a hillshade base for hydrological and erosion analysis.',
+        desc: 'A stream network derived from LiDAR DEMs and classified by upstream contributing area, from headwaters to main channel, over a hillshade base for hydrological and erosion analysis',
         tags: ['Flow accumulation', 'Stream order', 'Hydrological modelling'],
         spec: [
           { k: 'Subject', v: 'Stream network' },
@@ -301,7 +301,7 @@ class Component extends DCLogic {
           { k: 'Data', v: "Hawke's Bay LiDAR DEMs" },
         ],
         detail: [
-          'Hydrologic analysis of a DEM derived from LiDAR was used to model flow direction, flow accumulation, and drainage pathways. The generated stream network was classified by contributing catchment area and displayed as a vector layer on top of a hillshade.',
+          'Hydrologic analysis of DEMs derived from LiDAR was used to model flow direction, flow accumulation, and drainage pathways. The generated stream network was classified by contributing catchment area and displayed as a vector layer on top of a hillshade',
         ],
         source: "Hawke's Bay LiDAR DEMs (2020\u20132021), Land Information New Zealand (CC BY 4.0). CRS: NZGD2000 / NZTM2000 (EPSG:2193). Cartography: Ryan Ballantyne.",
       },
@@ -316,7 +316,7 @@ class Component extends DCLogic {
         ],
         kicker: "HAWKE'S BAY LiDAR · EROSION",
         title: 'Erosion',
-        desc: 'Regional-scale erosion models estimating net sediment yield from both shallow landslide and surface erosion. Terrain variables derived in R and integrated into GIS, then classed into yield bands to support environmental monitoring and land management.',
+        desc: 'Regional-scale erosion models estimating net sediment yield from both shallow landslide and surface erosion. Terrain variables derived in R and integrated into GIS, then classed into yield bands to support environmental monitoring and land management',
         tags: ['LiDAR DEM', 'R', 'Raster classification', 'Erosion modelling'],
         spec: [
           { k: 'Subject', v: 'Net sediment yield (t km\u207b\u00b2 yr\u207b\u00b9)' },
@@ -324,8 +324,8 @@ class Component extends DCLogic {
           { k: 'Data', v: "Hawke's Bay LiDAR DEMs" },
         ],
         detail: [
-          'Two regional-scale erosion models estimating net sediment yield across the catchment.',
-          'Processed LiDAR point cloud data with PDAL, conducted terrain and erosion modelling in R, and produced high-resolution sediment yield maps in QGIS.',
+          'Two regional-scale erosion models estimating net sediment yield across the catchment',
+          'Processed LiDAR point cloud data with PDAL, conducted terrain and erosion modelling in R, and produced high-resolution sediment yield maps in QGIS',
         ],
         source: "Hawke's Bay LiDAR DEMs (2020\u20132021), Land Information New Zealand (CC BY 4.0). Basemap: Eagle Technology, LINZ, StatsNZ, NIWA, Natural Earth, \u00a9 OpenStreetMap. Cartography: Ryan Ballantyne.",
       },
@@ -336,7 +336,7 @@ class Component extends DCLogic {
         pos: '50% 55%', zoom: 2.1, origin: '8% 55%',
         kicker: 'URBAN FOREST · DATA VISUALISATION',
         title: 'Trees of Royal Park',
-        desc: "8,190 trees in Melbourne's largest park, mapped from open urban-forest data \u2014 each dot sized by crown spread and shaded by the decade it was planted.",
+        desc: "8,190 trees in Melbourne's largest park, mapped from open urban-forest data \u2014 each dot sized by crown spread and shaded by the decade it was planted",
         tags: ['QGIS', 'Graduated symbols', 'Open data'],
         spec: [
           { k: 'Subject', v: '8,190 trees' },
@@ -356,7 +356,7 @@ class Component extends DCLogic {
         zoom: 1.10,
         kicker: 'THEMATIC \u00b7 CARTOGRAPHY',
         title: 'Greek Mythology in Australia',
-        desc: 'A thematic map charting Australian place names drawn from Greek mythology and their origins.',
+        desc: 'A thematic map charting Australian place names drawn from Greek mythology and their origins',
         tags: ['QGIS', 'Thematic', 'Place names'],
         spec: [
           { k: 'Subject', v: 'Mythological place names' },
@@ -365,7 +365,8 @@ class Component extends DCLogic {
         ],
         detail: [
           'Australian place names drawn from Greek mythology.',
-          'Place names were geocoded into a CSV of coordinates and imported into QGIS as a point layer. The map was styled with state-based symbology and custom annotations, with WA locations to be added later. Note: I included Roman mythology as well since they adopted Greek myths and renamed the gods with Latin names',
+          'Place names were geocoded into a CSV of coordinates and imported into QGIS as a point layer. The map was styled with state-based symbology and custom annotations, with WA locations to be added later'
+          'Note: I included Roman mythology as well since they adopted Greek myths and renamed the gods with Latin names',
         ],
         source: 'Place names: Gazetteer of Australia. Cartography: Ryan Ballantyne.',
       },
@@ -376,7 +377,7 @@ class Component extends DCLogic {
         pos: '50% 60%', zoom: 1.9, origin: '22% 62%',
         kicker: 'TRANSIT · DATA VISUALISATION',
         title: "Melbourne's tram network",
-        desc: "Every route in the world's largest tram network drawn as a single dark-mode transit map \u2014 26 lines colour-coded over a muted street base.",
+        desc: "Every route in the world's largest tram network drawn as a single dark-mode transit map \u2014 26 lines colour-coded over a muted street base",
         tags: ['QGIS', 'Transit cartography', 'Open data'],
         spec: [
           { k: 'Subject', v: '26 tram routes' },
@@ -384,7 +385,7 @@ class Component extends DCLogic {
           { k: 'Data', v: 'PTV \u00b7 OpenStreetMap' },
         ],
         detail: [
-          'Melbourne is home to the largest tram network in the world.',
+          'Melbourne is home to the largest tram network in the world',
           'Here is my visual showing it.',
         ],
         source: 'Route and basemap data: Public Transport Victoria and \u00a9 OpenStreetMap contributors. Cartography: Ryan Ballantyne.',
@@ -397,7 +398,7 @@ class Component extends DCLogic {
         url: 'https://ryan-ballantyne.github.io/aboriginal_nations_poster/',
         kicker: 'INDIGENOUS AUSTRALIA \u00b7 CARTOGRAPHY',
         title: 'Aboriginal Nations of Australia',
-        desc: 'A poster map of the Aboriginal nations and language groups of Australia, each region given its own colour so the density and diversity of Country reads at a single glance against a dark ground.',
+        desc: 'A poster map of the Aboriginal nations and language groups of Australia',
         tags: ['QGIS', 'Choropleth', 'Poster design'],
         spec: [
           { k: 'Subject', v: 'Aboriginal nations & language groups' },
@@ -406,7 +407,7 @@ class Component extends DCLogic {
         ],
         detail: [
           'Poster map',
-          'Each nation is rendered as a distinct colour patch, turning hundreds of group boundaries into a poster of Indigenous Australia.',
+          'Each nation is rendered as a distinct colour patch, turning hundreds of group boundaries into a poster of Indigenous Australia',
         ],
         source: 'Cartography: Ryan Ballantyne.',
       },
@@ -416,7 +417,7 @@ class Component extends DCLogic {
         kind: 'img', img: 'images/fishermans-bend.jpg', full: 'images/full/fishermans-bend.jpg',
         kicker: 'PLANNING · SUITABILITY ANALYSIS',
         title: 'Fishermans Bend development priority',
-        desc: "A multi-criteria suitability analysis for Melbourne's largest urban renewal precinct — classifying every parcel into high, medium and developed priority to answer a planning question for non-specialist stakeholders.",
+        desc: "A multi-criteria suitability analysis for Melbourne's largest urban renewal precinct — classifying every parcel into high, medium and developed priority to answer a planning question for non-specialist stakeholders",
         tags: ['ArcGIS Pro', 'Multi-criteria', 'Cartographic design'],
         spec: [
           { k: 'Subject', v: 'Redevelopment priority' },
@@ -424,9 +425,9 @@ class Component extends DCLogic {
           { k: 'Data', v: 'Parcels \u00b7 zoning \u00b7 footprints' },
         ],
         detail: [
-          'Using QGIS spatial analysis to identify parcels in Fishermans Bend that have high potential for redevelopment.',
-          'I integrated data on parcels, zoning, and building footprints to classify redevelopment opportunities by development intensity and visualised the results in a thematic map to support planning and decision-making.',
-          'So I used building count as a rough proxy. More detailed analysis might include building footprint coverage, floor area ratio and building height.',
+          'Using QGIS spatial analysis to identify parcels in Fishermans Bend that have high potential for redevelopment',
+          'I integrated data on parcels, zoning, and building footprints to classify redevelopment opportunities by development intensity and visualised the results in a thematic map to support planning and decision-making',
+          'So I used building count as a rough proxy. More detailed analysis might include building footprint coverage, floor area ratio and building height',
         ],
         source: 'Basemap: \u00a9 OpenStreetMap contributors. Precinct boundaries: Victorian Government / Fishermans Bend Framework. Cartography: Ryan Ballantyne.',
       },
